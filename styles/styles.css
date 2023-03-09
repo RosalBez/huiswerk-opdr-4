@@ -75,6 +75,18 @@ button {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
 }
 
+.header-img {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+img {
+    position: relative;
+    max-width: 50px;
+
+}
 /* -------- 4. main ------------------- */
 
 /* -------- 4.1 section 1 --------- */
