@@ -3,6 +3,8 @@
 /* ----------- 1. Global Styles ------------- */
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 img {
@@ -48,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     list-style: none;
     padding-right: 25px;
+    padding-top: 10px;
     color: var(--standard-color4)
 
 }
@@ -80,7 +83,7 @@ button {
     justify-content: center;
 }
 
-img {
+header img {
     position: relative;
     max-width: 50px;
 
@@ -123,23 +126,38 @@ a:link {
 
 
 /* ------- 4.2 section 2 --------------- */
-
-.container-article1 {
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner-container-article1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+}
+.child-article1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 35%;
+    min-width: 35px;
 }
 
-img {
+.outer-container img {
     width: 100%;
 }
 
 .image-wrapper {
-    flex-basis: 800px;
+    flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 1;
 }
+
+
 /* ------- 4.3 section 3 --------------- */
 /* ------- 4.4 section 4 --------------- */
 
