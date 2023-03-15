@@ -35,40 +35,62 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
 }
 /* --------------- 3. navigatie balk ----------------- */
+.outer-container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-.nav-container {
+.outer-container-nav {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.inner-container-nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
-
+    gap: 35px;
+    color: var(--standard-color4);
+    padding: 1rem 2rem;
 }
-.nav-child {
+
+.inner-container-nav > li {
     display: flex;
-    flex-direction: row;
-    flex-basis: 320px;
-    justify-content: space-between;
+    justify-content: flex-end;
     list-style: none;
-    padding-right: 25px;
-    padding-top: 10px;
-    color: var(--standard-color4)
-
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
 }
-/* -------- 3.1 header --------- */
-.div-header {
+
+/*!* -------- 3.1 header --------- *!*/
+
+.inner-container-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 150px;
-    padding-top: 50px;
     color: var(--standard-color4);
-    font-size: 21px;
-    font-weight: 300;
+    padding-top: 65px;
+    padding-bottom: 55px;
 
 }
 
-button {
+.inner-container-div > h1 {
+     flex-basis: 10px;;
+     text-align: center;
+}
+
+.inner-container-div > p {
+    text-align: center;
+    margin: 25px;
+    font-size: 21px;
+    font-weight: 150;
+}
+.inner-container-div > button {
     background-color: var(--standard-color3);
     color: var(--standard-color4);
     border: none;
@@ -78,16 +100,6 @@ button {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
 }
 
-.header-img {
-    display: flex;
-    justify-content: center;
-}
-
-header img {
-    position: relative;
-    max-width: 50px;
-
-}
 /* -------- 4. main ------------------- */
 .mainbackground {
     background-color: var(--background-project-color);
@@ -125,7 +137,7 @@ a:link {
 }
 
 
-/* ------- 4.2 section 2 --------------- */
+/*!* ------- 4.2 section 2 --------------- *!*/
 .outer-container {
     display: flex;
     flex-direction: column;
@@ -158,15 +170,26 @@ a:link {
 }
 
 
-/* ------- 4.3 section 3 --------------- */
-/* ------- 4.4 section 4 --------------- */
+.inner-container-article2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
 
-/* ----------------- 5. Footer ------- */
-
-footer {
-    background: var(--main-txt-color);
-    color: var(--standard-color4);
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
+
+/*!* ------- 4.3 section 3 --------------- *!*/
+
+
+
+/*!* ------- 4.4 section 4 --------------- *!*/
+
+/*!* ----------------- 5. Footer ------- *!*/
+
+/*footer {*/
+/*    background: var(--main-txt-color);*/
+/*    color: var(--standard-color4);*/
+/*    text-align: center;*/
+/*    padding-top: 5px;*/
+/*    padding-bottom: 5px;*/
+/*}*/
