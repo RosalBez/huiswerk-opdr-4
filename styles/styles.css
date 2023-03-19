@@ -26,6 +26,7 @@ img {
 
 body {
     font-family: 'Roboto', sans-serif;
+
 }
 header {
     background: rgb(87,34,205);
@@ -34,63 +35,65 @@ header {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
 }
+
+p {
+    font-size: 21px;
+}
 /* --------------- 3. navigatie balk ----------------- */
-.outer-container-header {
+ header .outer-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.outer-container-nav {
+ header .inner-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+.nav-container {
     display: flex;
     flex-direction: row;
+    align-self: end;
 
 }
 
-
-.inner-container-nav {
+.nav-container > ul {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     gap: 35px;
     color: var(--standard-color4);
     padding: 1rem 2rem;
-}
-
-.inner-container-nav > li {
-    display: flex;
-    justify-content: flex-end;
     list-style: none;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
 }
 
-/*!* -------- 3.1 header --------- *!*/
+/*!*!* -------- 3.1 header --------- *!*!*/
 
-.inner-container-div {
+.content-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--standard-color4);
     padding-top: 65px;
-    padding-bottom: 55px;
-
+    padding-bottom: 65px;
+    text-align: center;
 }
 
-.inner-container-div > h1 {
-     flex-basis: 10px;;
-     text-align: center;
+.content-container > h1 {
+    display: flex;
+    flex-basis: 15px;
+    overflow-wrap: break-word;
 }
 
-.inner-container-div > p {
+.content-container > p {
     text-align: center;
     margin: 25px;
     font-size: 21px;
     font-weight: 150;
 }
-.inner-container-div > button {
+.content-container > button {
     background-color: var(--standard-color3);
     color: var(--standard-color4);
     border: none;
@@ -100,12 +103,18 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
 }
 
-/* -------- 4. main ------------------- */
+
+/*!* -------- 4. main ------------------- *!*/
 .mainbackground {
     background-color: var(--background-project-color);
 }
 /* -------- 4.1 section 1 --------- */
-
+main .outer-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .section-container-1 {
     display: flex;
     flex-direction: column;
@@ -116,9 +125,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--standard-color1);
     overflow-wrap: break-word;
     padding-top: 50px;
-    font-size: 25px;
+    font-size: 55px;
     padding-left: 550px;
     padding-right: 550px;
+    margin-bottom: 15px;
 }
 
 .question {
@@ -136,60 +146,87 @@ a:link {
     color: var(--standard-color1)
 }
 
-
-/*!* ------- 4.2 section 2 --------------- *!*/
-.outer-container {
+/*/* ------- 4.2 section 2 --------------- */
+section .outer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.inner-container-article1 {
+section .inner-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
-.child-article1 {
+
+.div-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-basis: 35%;
-    min-width: 35px;
+    min-width: 25px;
+    gap: 75px;
+    font-weight: 450;
+    margin: 15px;
 }
 
 .outer-container img {
-    width: 100%;
+   width: 100%;
 }
 
 .image-wrapper {
-    flex-basis: auto;
+    flex-basis: 880px;
     flex-grow: 0;
     flex-shrink: 1;
 }
 
-
-.inner-container-article2 {
+article:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+/*!*!* ------- 4.3 section 3 --------------- *!*!*/
+
+
+
+
+/*!*!* ------- 4.4 section 4 --------------- *!*!*/
+.outer-container-tegels {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.inner-container-tegels{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    text-align: left;
+    border: solid red;
+    gap: 10px;
+    margin-left: 205px;
 
 }
 
-/*!* ------- 4.3 section 3 --------------- *!*/
+.icons {
+    max-width: 55px;
+}
 
 
 
-/*!* ------- 4.4 section 4 --------------- *!*/
 
-/*!* ----------------- 5. Footer ------- *!*/
+/*!*!* ----------------- 5. Footer ------- *!*!*/
 
-/*footer {*/
-/*    background: var(--main-txt-color);*/
-/*    color: var(--standard-color4);*/
-/*    text-align: center;*/
-/*    padding-top: 5px;*/
-/*    padding-bottom: 5px;*/
-/*}*/
+footer {
+    background: var(--main-txt-color);
+    color: var(--standard-color4);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
