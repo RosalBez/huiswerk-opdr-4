@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <title>huiswerk-opdr-4-een eigen pagina bouwen</title>
 </head>
+
 <body>
     <header class="outer-container">
         <div class="inner-container">
-        <nav class="nav-container">
+        <nav class="navigation">
             <ul>
                 <li> Case Studies</li>
                 <li> Services </li>
@@ -20,7 +21,7 @@
             </ul>
         </nav>
 
-        <div class="content-container">
+        <div class="header-content">
                 <h1> Your website is an investment in the success of your business. </h1>
             <p>We are here to help you succeed. </p>
             <button type="button" >Let's work together button type</button>
@@ -31,58 +32,65 @@
 
 
 
-<main class="outer-container">
-        <section class="section-container-1">
-            <p> Rekupe is a digital agency in Los Angeles.
-            <p> We use strategic UX, SEO optimization and beautiful visual designs to help your business grow.</p>
+    <main>
+        <section class="outer-container">
+            <div class="inner-container-section-one"
+            <p> Rekupe is a digital agency in Los Angeles.</p>
+            <p> We use strategic UX, SEO optimization and beautiful visual designs to help your business grow. </p>
             <p> We see every project as a fresh opportunity, pushing ourselves to create new digital experiences.</p>
-                <p class="question">Have a question? <a href="#contact-form"> Click here </a> to contact us! </p>
+            <p class="question">Have a question? <a href="#contact-form"> Click here </a> to contact us! </p>
+            </div>
         </section>
 
         <section class="outer-container">
-            <article class="inner-container">
-                <div class="div-container">
-                    <h3> Rolling Stone</h3>
-                    <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.</p>
-                </div>
-                <span class="image-wrapper">
-                    <img src="./assets/work-image-01.jpeg" alt=" webpagina en tijdschrift RollingStone"/>
-                </span>
-            </article>
+            <div class="inner-container">
 
-            <article class="inner-container2">
-                <div class="div-container">
-                <h3> Variety</h3>
-                <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905..</p>
+                <article class="article">
+                    <div class="article-content">
+                        <h3> Rolling Stone</h3>
+                        <p> You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.</p>
+                    </div>
+                    <span class="image-wrapper">
+                        <img src="./assets/work-image-01.jpeg" alt=" webpagina en tijdschrift RollingStone"/>
+                    </span>
+                </article>
+
+
+                <article class="article">
+                    <div class="article-content">
+                        <h3> Variety</h3>
+                        <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905..</p>
+                    </div>
+                    <span class="image-wrapper">
+                        <img src="./assets/work-image-02.jpeg" alt="webpagina en tijdschrift variety"/>
+                    </span>
+                </article>
+
+                <article class="article">
+                    <div class="article-content">
+                        <h3> Worth </h3>
+                        <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
+                     </div>
+                    <span class="image-wrapper">
+                        <img src="./assets/work-image-03.jpeg" alt="webpagina en tijdschrift worth"/>
+                    </span>
+                </article>
+
             </div>
-            <span class="image-wrapper">
-                <img src="./assets/work-image-02.jpeg" alt="webpagina en tijdschrift variety"/>
-            </span>
-        </article>
+        </section>
 
-        <article class="inner-container">
-            <div class="div-container">
-                <h3> Worth</h3>
-                <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
-            </div>
-            <span class="image-wrapper">
-                <img src="./assets/work-image-03.jpeg" alt="webpagina en tijdschrift worth"/>
-            </span>
-        </article>
-    </section>
+<!--    <section class="outer-container-tegels">-->
+<!--        <article class="inner-container-tegels">-->
+<!--            <img class="icons" src="assets/icon_web-design.svg" alt="webdesign icoon">-->
+<!--            <h4> Web Design </h4>-->
+<!--            <p> Good web design is how companies stand out from their competitors. High quality web design leads to increased user conversion and engagement. Through a proven web design process, we help clients launch websites and products that improve on their bottom line. </p>-->
+<!--        </article>-->
 
-    <section class="outer-container-tegels">
-        <article class="inner-container-tegels">
-            <img class="icons" src="assets/icon_web-design.svg" alt="webdesign icoon">
-            <h4> Web Design </h4>
-            <p> Good web design is how companies stand out from their competitors. High quality web design leads to increased user conversion and engagement. Through a proven web design process, we help clients launch websites and products that improve on their bottom line. </p>
-        </article>
-
-        <article class="inner-container-tegels">
-            <img class="icons" src="assets/icon_web-development.svg" alt="web development icoon">
-            <h4> Web Development  </h4>
-            <p> Modern websites need to be responsive and fully functional at all sizes. We develop all of our sites with a mobile first approach and ensure that our code quality is clean, organized and performant. Already have a design but need it developed? We’re here to help! </p>
-        </article>
+<!--        <article class="inner-container-tegels">-->
+<!--            <img class="icons" src="assets/icon_web-development.svg" alt="web development icoon">-->
+<!--            <h4> Web Development  </h4>-->
+<!--            <p> Modern websites need to be responsive and fully functional at all sizes. We develop all of our sites with a mobile first approach and ensure that our code quality is clean, organized and performant. Already have a design but need it developed? We’re here to help! </p>-->
+<!--        </article>-->
 
 
 
@@ -99,9 +107,9 @@
 </main>
 
 
-<footer>
-    <p> Business website opdracht © NOVI Hogeschool 2022 </p>
-</footer>
+<!--<footer>-->
+<!--    <p> Business website opdracht © NOVI Hogeschool 2022 </p>-->
+<!--</footer>-->
 
 </body>
 </html>
